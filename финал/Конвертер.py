@@ -7,14 +7,13 @@ OUTPUT_FILENAME = "output.json"
 
 
 def task() -> None:
-    ...  # TODO считать содержимое csv файла
+ 
 
     with open(INPUT_FILENAME, mode='r', encoding='utf-8') as csv_file:
         reader = csv.DictReader(csv_file)
 
         data = [row for row in reader]
 
-    ...  # TODO Сериализовать в файл с отступами равными 4
     with open(OUTPUT_FILENAME, mode='w', encoding='utf-8') as json_file:
         json.dump(data, json_file, indent=4, ensure_ascii=False)
 
