@@ -1,4 +1,4 @@
-# TODO решите задачу
+
 import json
 
 def task() -> float:
